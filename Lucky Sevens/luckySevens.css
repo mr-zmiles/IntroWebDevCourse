@@ -1,0 +1,53 @@
+/*
+    Name: Zach Miles
+    Date Created: 7/13/2019
+    Most recent revision:
+*/
+
+body{
+  font-family: 'Comic Sans MS', arial;
+}
+
+thead{
+  font-weight: bold;
+}
+
+
+table{
+  width: 50%;
+  margin: auto;
+  float: left;
+}
+
+table, th, td{
+  border: 1px solid #0d1f2d;
+  border-collapse: collapse;
+  padding: 5px 10px;
+}
+
+th{
+  background-color: gray;
+  color: #f2eded;
+}
+
+tr{
+  height: 30px;
+}
+
+tbody tr:nth-child(odd){
+  background-color: lightgray;
+}
+
+hr{
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+
+
+caption{
+  font-weight: bold;
+  color: black;
+  caption-side: top;
+  margin-bottom: 8px;
+  font-size: 1.75em;
+}
