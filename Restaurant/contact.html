@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<!--
+  Name: Zach Miles
+  Date Created: 7/7/2019
+  Most recent version:
+  -->
+<html lang="en">
+  <head>
+    <title>Contact Us</title>
+    <script type="text/JavaScript" src="restaurant.js"></script>
+    <noscript>JavaScript is disabled. For full functionality of this page it is necessary to enable JavaScript. Here are the <a href="http://www.enable-javascript.com" target="_blank"> instructions how to enable JavaScript in your web browser</a></noscript></noscript>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.0/font/css/open-iconic-bootstrap.min.css" />
+    <link href="styles/restaurantStyles.css" rel="stylesheet" type"text/css"  />
+
+    <style>
+      label.required, div.required{
+        font-weight: bold;
+      }
+    </style>
+
+    </head>
+
+    <body>
+      <header class="defaultHeader">
+        <h1 #id="name">Tony's Good Eats</h1>
+      </header>
+
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a class="nav-itemnav-link" href="index.html"><span class="oi oi-home"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-item" href="menu.html">Menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Contact Us</a>
+        </li>
+      </ul>
+
+<br />
+
+      <div class="contactForm">
+        <form action="#" method="POST" name="contactUsForm"  onsubmit="return validateItems();">
+          <div class="form-group">
+
+            <div class="form-group row">
+              <label class="required col-sm-2 col-med-6 col-form-label" for="name">Name: </label>
+              <div class="col-sm-10">
+                <input type="text" id="name" name="name"  autofocus /> <br />
+              </div>
+            </div><!--End first row-->
+            <div class="form-group row">
+              <label class="required col-med-6 col-sm-2 col-form-label" for="email">Email: </label>
+              <div class="col-sm-10">
+                <input type="text" id="Email" name="email" /><br />
+              </div>
+            </div><!--End second row-->
+            <div class="form-group row">
+              <label class="required col-med-6 col-sm-2 col-form-label" for="phoneNumber">Phone: </label>
+              <div class="col-sm-10">
+                <input type="text" id="phoneNumber" name="phoneNumber" /><br />
+              </div>
+            </div><!--End Third row-->
+            <div class="form-group row">
+              <label class="required col-med-6 col-sm-2 col-form-label" for="bestTime">Reason for Inquiry:</label>
+              <div class="col-sm-10">
+                <select id="reason" name="bestTime" >
+                  <option value="default" selected>Catering</option>
+                  <option value="privateParty">Private Party</option>
+                  <option value="feedback">Feedback</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+            </div><!--End Fourth row-->
+              <br />
+            <div class="form-group row">
+              <label for="info" class="col-med-6 col-sm-2 col-form-label">Additional information:</label>
+              <div class="col-sm-10">
+                <textarea id="info" name="info"></textarea>
+              </div>
+            </div><!--End Fifth row-->
+              <br />
+            <div class="row">
+              <legend class="col-sm-2 col-form-label pt-0">Have you been to the restaurant?</legend>
+              <div class="col-sm-10">
+                <div class="form-check">
+                  <input "form-check-input" type="radio" id="choice1" name="cqAnswer" value="Yes" checked/>
+                  <label class="form-check-label" for="choice1">No</label>
+                  <input "form-check-input" type="radio" id="choice2" name="cqAnswer" value="No"/>
+                  <label class="form-check-label" for="choice2">Yes</label>
+                </div>
+              </div>
+            </div><!--End Sixth row-->
+
+
+            <div class="form-group row">
+              <!-- <label class="col-sm-2 col-form-label" for="contactDays">Best days to contact you:</label> -->
+              <div class="required col-sm-2">Best days to contact you:</div>
+              <div class="col-sm-10">
+                <div class="form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="monday" name="contactDays" value="monday" />
+                  <label class="form-check-label" for="monday">M</label>
+                </div>
+                <div class="form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="tuesday" name="contactDays" value="tuesday" />
+                  <label class="form-check-label" for="tuesday">T</label>
+                </div>
+                <div class="form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="wednesday" name="contactDays" value="wednesday" />
+                  <label class="form-check-label" for="wednesday">W</label>
+                </div>
+                <div class="form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="thursday" name="contactDays" value="thursday" />
+                  <label class="form-check-label" for="thursday">Th</label>
+                </div>
+                <div class="form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="friday" name="contactDays" value="friday" />
+                  <label class="form-check-label" for="friday">F</label>
+                </div>
+              </div>
+            </div><!--End Seventh row-->
+
+
+              <br /><input type="submit" value="Send Request"/>
+            </div> <!--End "form-group div"-->
+
+          </form>
+      </div>
+
+
+      <footer>
+        114 W. Maple Lane, Tyler, TX, 75705 </br>
+        (903) 989-2000
+      </footer>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+  </body>
+
+</html

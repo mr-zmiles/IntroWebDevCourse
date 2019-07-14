@@ -1,0 +1,117 @@
+/*
+  Name: Zach Miles
+  Date Created: 7/7/2019
+  Most recent version: 7/13/2019
+*/
+body{
+  background-color: #593a3a;
+  font-family: Merriweather, serif;
+}
+
+footer, .defaultHeader{
+  height: 100px;
+  text-align:center;
+  padding: 30px 10px 20px 10px;
+  background-color: rgb(105,27,27);
+  color: #9d5555;
+}
+
+footer{
+    margin-top: 40px;
+}
+
+.jumbotron{
+  background-color: rgb(105,27,27);
+  color: #9d5555;
+}
+
+h1{
+  font-size: 2.5em;
+  font-family: fancy;
+}
+
+h2{
+  text-align: center;
+}
+
+/*Style for Navigation*/
+
+nav a:hover{
+  font-weight: bold;
+}
+
+
+nav a{
+  border: 1px solid black;
+  color: 142320;
+  background-color: 447d44;
+  font-size: 1.2em;
+}
+
+nav a:visited{
+  background-color: 1b441b;
+  color: 436119;
+}
+
+nav a:active{
+  text-decoration: none;
+}
+
+.nav-item:hover{
+  font-weight:bold;
+}
+
+.nav-item .nav-link{
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+.nav-pills .nav-link{
+  background-color: #37645b;
+}
+
+.carousel-item.active{
+  display:block;
+}
+
+/* Setting the heights of the carousel slides */
+.carousel-item {
+	max-height: 450px;
+}
+
+.carousel-caption{
+  color:  #ffdd99;
+  font-weight: bold;
+  text-shadow: 2px 2px black;
+}
+
+
+
+/* Responsive CSS for carousel */
+@media (max-width: 992px) {
+	.item {
+		height: 400px;
+	}
+}
+
+@media (max-width: 768px) {
+	.item {
+		height: 300px;
+	}
+
+}
+
+@media (max-width: 544px) {
+	.carousel-caption h2, .carousel-caption h3 {
+		font-size: 130%;
+	}
+}
+
+.imgItem {
+	min-height: 200px;
+}
+
+.mainRow{
+  margin-top: 25px;
+}

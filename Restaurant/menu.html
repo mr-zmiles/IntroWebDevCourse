@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<!--
+  Name: Zach Miles
+  Date Created: 7/7/2019
+  Most recent version: 7/12/2019
+  -->
+<html lang="en">
+  <head>
+    <title>Menu</title>
+    <link href="styles/restaurantStyles.css" rel="stylesheet" type"text/css"/>
+    <noscript>JavaScript is disabled. For full functionality of this page it is necessary to enable JavaScript. Here are the <a href="http://www.enable-javascript.com" target="_blank"> instructions how to enable JavaScript in your web browser</a></noscript></noscript>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.0/font/css/open-iconic-bootstrap.min.css" />
+    <link href="styles/restaurantStyles.css" rel="stylesheet" type"text/css"/>
+    <style>
+      .menu, table{
+        margin: auto;
+        background-color: #37645b;
+        width: 50%;
+        border: none;
+        text-align: center;
+      }
+      .menuItem{
+        font-size: 1.5em;
+        font-weight: bold;
+      }
+      tr{
+        text-align: center;
+      }
+      #bevTable tr{
+        text-align: left;
+        padding: 10px;
+        height: 30px;
+      }
+      #bevTable, #bevTable th, #bevTable td{
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 5px 10px;
+      }
+
+      #bevTable tbody tr:nth-child(odd){
+        background-color: #9d5555;
+        }
+
+    </style>
+    </head>
+
+    <body>
+      <header class="defaultHeader">
+        <h1 #id="name">Tony's Good Eats</h1>
+      </header>
+
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html"><span class="oi oi-home"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact Us</a>
+        </li>
+      </ul>
+
+        <div class="container-fluid">
+          <h2>Check Out our Delicious Menu</h2>
+          <div class="menu">
+
+
+            <!--First 3 Menu Items -->
+            <div class="row">
+              <div class="col-lg-4 col-md">
+                <p>
+                  <span class="menuItem">Buger and Fries</span><br />
+                  An American Classic! <br />
+                  Your choice - with or without cheese <br  />
+                  Pickle, onion, tomato, and lettuce <br />
+                  Served with our famous thick cut fries <br />
+                  $7.95
+                </p>
+              </div> <!--End of Column-->
+
+              <div class="col-lg-4 col-md">
+                <p>
+                  <span class="menuItem">Hot Dog and Chips</span><br />
+                  A Summer Classic! <br />
+                  Your choice - white or wheat bun <br  />
+                  Relish, mustard, and ketchup <br />
+                  Served with our house-made chips <br />
+                  $7.95
+                </p>
+              </div>
+
+            <div class="col-lg-4 col-md">
+              <p>
+                <span class="menuItem">Italian Sausage and Peppers</span><br />
+                An All-Time Favorite! <br />
+                Your choice - mild or spicy Cole Slaw <br  />
+                Served with garlic mashers <br />
+                $10.95 <br />
+              </p>
+            </div>
+          </div> <!--End of Row-->
+
+          <!--Second Set of 3 Menu Items -->
+          <div class="row">
+            <div class="col-lg-4 col-md">
+              <p>
+                <span class="menuItem">Tenderloin Sandwich and Chips</span><br />
+                Really Hits the Spot! <br />
+                Plain or Sesame Seed Bun <br  />
+                Pickle, onion, tomato, and lettuce <br />
+                Served with our house-made chips <br />
+                $8.95
+              </p>
+            </div> <!--End of Column-->
+
+            <div class="col-lg-4 col-md">
+              <p>
+                <span class="menuItem">House Salad</span><br />
+                On the Ligher Side<br />
+                Your choice - with or without cheese <br  />
+                Iceberg lettuce, tomatoes, peppers<br />
+                Thousand Island or Ranch<br />
+                Dressing Served with a dinner Rolling <br />
+                $6.95
+              </p>
+            </div>
+
+          <div class="col-lg-4 col-md">
+            <p>
+              <span class="menuItem">Brisket Sandwich and Fries</span><br />
+              A Taste of Texas! <br />
+              Smoked Brisket on thick-cut<br  />
+              Texas Toast<br />
+              Cole Slaw<br />
+              Served with our famous thick-cut<br />
+              french fries<br />
+              $7.95
+            </p>
+          </div>
+        </div> <!--End of Row-->
+        </div>
+
+
+        <br />
+
+        <table id="bevTable">
+          <th colspan="2" style="text-align: center;">
+            Beverages
+          </th>
+          <tr>
+            <td>Root Beer</td>
+            <td>$3.00</td>
+          </tr>
+          <tr>
+            <td>Bottled Water</td>
+            <td>$1.25</td>
+          </tr>
+          <tr>
+            <td>Lemonade</td>
+            <td>$1.00</td>
+          </tr>
+          <tr>
+            <td>Iced Tea</td>
+            <td>$1.25</td>
+          </tr>
+
+        </table>
+        </div> <!--End of Container-->
+      <!-- </p> -->
+
+
+
+
+
+
+      <footer>
+        114 W. Maple Lane, Tyler, TX, 75705 </br>
+        (903) 989-2000
+      </footer>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+  </body>
+
+</html
